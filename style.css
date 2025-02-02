@@ -96,7 +96,7 @@ h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #007BFF; /* Blue */
+    background-color: #c9daf8; /* Same pale blue as Score Tracker */
     color: white;
 }
 
@@ -267,7 +267,7 @@ input:checked + .slider:before {
     margin-top: 15px;
     display: flex;
     justify-content: center; /* Centers buttons */
-    gap: 20px; /* Adjust space between buttons */
+    gap: 30px; /* Adjust space between buttons */
 }
 
 #share-btn {
