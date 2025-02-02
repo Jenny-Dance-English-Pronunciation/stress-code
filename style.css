@@ -272,7 +272,7 @@ input:checked + .slider:before {
 }
 
 #share-btn {
-    background-color: #a1de99; /* pale green share button */
+    background-color: rgba(179, 253, 169, 0.6); /* same pale green as correct answer */
     color: #333;
     font-size: 1em;
     padding: 10px 20px;
