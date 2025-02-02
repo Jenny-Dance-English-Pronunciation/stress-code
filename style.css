@@ -89,14 +89,13 @@ h2 {
     background-color: #218838;
 }
 
-/* ✅ Info Button Styling */
+/* ✅ Info (was, now Help) Button Styling */
 .info-button {
     font-size: 16px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
     background-color: #007BFF; /* Blue */
     color: white;
 }
@@ -107,7 +106,7 @@ h2 {
 
 /* ✅ Score Tracker Styling */
 .score-tracker {
-    background-color: #B9C7DB;
+    background-color: #c9daf8;
     border: 2px solid #333;
     border-radius: 10px;
     padding: 10px;
@@ -266,6 +265,9 @@ input:checked + .slider:before {
 /* ✅ Share Button Styling */
 .share-container {
     margin-top: 15px;
+    display: flex;
+    justify-content: center; /* Centers buttons */
+    gap: 20px; /* Adjust space between buttons */
 }
 
 #share-btn {
