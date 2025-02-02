@@ -1,7 +1,7 @@
 console.log("✅ script.js is running!");
 
 // ✅ Feature toggle for 3-word limit
-const LIMIT_WORDS_PER_DAY = false; 
+const LIMIT_WORDS_PER_DAY = true; 
 const MAX_WORDS_PER_DAY = 3;
 
 // ✅ Google Sheets Data Source
