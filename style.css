@@ -93,11 +93,11 @@ h2 {
 .info-button {
     font-size: 16px;
     padding: 10px 20px;
-    border: none;
+    border: 2px solid #333;
     border-radius: 5px;
     cursor: pointer;
     background-color: #c9daf8; /* Same pale blue as Score Tracker */
-    color: white;
+    color: #333;
 }
 
 .info-button:hover {
