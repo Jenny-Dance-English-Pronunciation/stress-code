@@ -155,7 +155,8 @@ function checkAnswer() {
         updateScore(); // ✅ Update score if correct
         celebrateWin();
     } else {
-        alert("Try Again: make changes to any answers in orange boxes.");
+        alert("Try Again: make changes to any answers in orange boxes, using the IPA text to help you.");
+        document.getElementById("ipa-text").style.display = "inline"; // Reveal IPA
     }
 }
 
