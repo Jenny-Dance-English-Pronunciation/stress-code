@@ -200,7 +200,7 @@ button:hover {
 
 /* ✅ Feedback Message Styling */
 .feedback-message {
-    display: none; /* Hidden by default */
+    display: block !important;
     color: red;
     font-weight: bold;
     text-align: center; /* Centers the message */
