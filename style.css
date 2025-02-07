@@ -198,6 +198,15 @@ button:hover {
     background-color: #FFB347;
 }
 
+/* ✅ Feedback Message Styling */
+.feedback-message {
+    display: none; /* Hidden by default */
+    color: red;
+    font-weight: bold;
+    text-align: center; /* Centers the message */
+    margin-top: 10px; /* Adds some spacing */
+}
+
 /* ✅ IPA Toggle Container Styling */
 .ipa-toggle-container {
     display: flex;
