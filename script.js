@@ -154,6 +154,7 @@ function checkAnswer() {
     if (allCorrect) {
         updateScore(); // ✅ Update score if correct
         celebrateWin();
+        feedbackMessage.style.display = "none"; // Hide message if correct
     } else {
             // ✅ Show a custom "Try Again" message
         document.getElementById("feedback-message").textContent = "Try Again: Make changes to any answers in orange boxes, using the IPA spelling to help you.";
