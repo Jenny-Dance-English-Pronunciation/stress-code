@@ -157,7 +157,7 @@ function checkAnswer() {
         feedbackMessage.style.display = "none"; // Hide message if correct
     } else {
             // ✅ Show a custom "Try Again" message
-        document.getElementById("feedback-message").textContent = "Try Again: Make changes to any answers in orange boxes, using the IPA spelling to help you.";
+        document.getElementById("feedback-message").textContent = "Try Again: Change any answers in orange. Tap the IPA spelling button to help you solve the puzzle!";
         document.getElementById("feedback-message").style.display = "block"; // Show feedback message if incorrect
         document.getElementById("ipa-text").style.display = "inline"; // Reveal IPA
     }
