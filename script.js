@@ -229,6 +229,10 @@ function resetGame() {
     ipaToggle.checked = false;  
     ipaText.style.display = "none"; 
 
+    // Hide the feedback message
+    const feedbackMessage = document.getElementById("feedback-message");
+    feedbackMessage.style.display = "none";
+    
     updateScoreDisplay();
     setTimeout(loadWordData, 500);
 }
