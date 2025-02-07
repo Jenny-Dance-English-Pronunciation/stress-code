@@ -158,8 +158,7 @@ function checkAnswer() {
     } else {
             // ✅ Show a custom "Try Again" message
         document.getElementById("feedback-message").textContent = "Try Again: Make changes to any answers in orange boxes, using the IPA spelling to help you.";
-        document.getElementById("feedback-message").style.display = "block";
-        feedbackMessage.style.display = "block"; // Show message if incorrect
+        document.getElementById("feedback-message").style.display = "block"; // Show feedback message if incorrect
         document.getElementById("ipa-text").style.display = "inline"; // Reveal IPA
     }
 }
