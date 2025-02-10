@@ -23,6 +23,9 @@ const preloadedSounds = drumSounds.map(src => {
     return audio;
 });
 
+// ✅ Keep track of recently shown words (Must be outside the function to persist)
+let recentWords = [];
+
 // ✅ Load word data from Google Sheets
 async function loadWordData() {
     try {
@@ -30,10 +33,29 @@ async function loadWordData() {
         const response = await fetch(sheetURL);
         const data = await response.json();
         console.log("Full Google Sheets Data:", data);
-        console.log("Data received:", data);
 
         const rows = data.values;
-        const randomRow = rows[Math.floor(Math.random() * rows.length)];
+
+        function getRandomWord(rows) {
+            let randomRow;
+            let attempts = 0;
+            do {
+                randomRow = rows[Math.floor(Math.random() * rows.length)];
+                attempts++;
+            } while (recentWords.includes(randomRow[0]) && attempts < 100); // Avoid infinite loops
+
+            // ✅ Add word to recentWords list
+            recentWords.push(randomRow[0]);
+            if (recentWords.length > 50) {
+                recentWords.shift(); // Remove oldest word
+            }
+
+            return randomRow;
+        }
+
+        // ✅ Select a word while ensuring it hasn't been used recently
+        const randomRow = getRandomWord(rows);
+
         const wordData = {
             word: randomRow[0],
             syllables: randomRow[2],
