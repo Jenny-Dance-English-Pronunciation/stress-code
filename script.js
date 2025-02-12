@@ -40,7 +40,7 @@ async function loadWordData() {
             let randomRow;
             let attempts = 0;
             do {
-                randomRow = rows[Math.floor(Math.random() * rows.length)];
+                randomRow = rows[Math.floor(Math.random() * (rows.length - 1)) + 1]; // Skip header row
                 attempts++;
             } while (recentWords.includes(randomRow[0]) && attempts < 100); // Avoid infinite loops
 
