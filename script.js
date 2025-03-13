@@ -263,7 +263,8 @@ function resetGame() {
 function showOnboardingPopup(forceShow = false) {
     const hasSeenPopup = localStorage.getItem("seenPopup");
 
-    if (!hasSeenPopup || forceShow) {
+    // 🚀 Disable automatic pop-up on first open but keep the ability to show it manually
+    if (forceShow) {
         document.getElementById("onboarding-popup").style.display = "flex";
     }
 }
