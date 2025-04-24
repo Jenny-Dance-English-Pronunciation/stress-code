@@ -127,8 +127,16 @@ function updateScore() {
 // ✅ Update Score Display
 function updateScoreDisplay() {
     const { score, streak } = loadScoreData();
-    document.getElementById("current-score").innerText = score;
-    document.getElementById("current-streak").innerText = streak;
+    const scoreEl = document.getElementById("current-score");
+    const streakEl = document.getElementById("current-streak");
+
+    if (scoreEl) {
+        scoreEl.innerText = score;
+    }
+
+    if (streakEl) {
+        streakEl.innerText = streak;
+    }
 }
 
 // ✅ Check answers
