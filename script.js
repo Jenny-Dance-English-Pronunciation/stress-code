@@ -187,7 +187,7 @@ function checkAnswer() {
         feedbackMessage.style.display = "none"; // Hide message if correct
     } else {
             // ✅ Show a custom "Try Again" message
-        document.getElementById("feedback-message").textContent = "Try Again: Change any answers in orange. Use the IPA spelling button to help you solve the puzzle!";
+        document.getElementById("feedback-message").textContent = "Try Again: Change answers in orange using the IPA spelling to help you solve the puzzle!";
         document.getElementById("feedback-message").style.display = "block"; // Show feedback message if incorrect
         document.getElementById("ipa-text").style.display = "inline"; // Reveal IPA
         document.getElementById("toggle-ipa").checked = true; // ✅ Move toggle to ON position
