@@ -294,3 +294,26 @@ input:checked + .slider:before {
 #share-btn:hover {
     background-color: #0056b3;
 }
+
+.preview-words-container {
+  margin-top: 2rem;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.preview-heading {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.preview-text {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.6;
+}
