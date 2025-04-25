@@ -5,7 +5,7 @@
     align-items: center; /* Align items vertically */
     justify-content: center; /* Center the entire unit */
     gap: 10px; /* Add spacing between the padlock and h1 */
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .padlock-wrapper {
@@ -34,7 +34,7 @@ h1 {
 h2 {
     font-size: 1.5em;
     color: #555;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 /* ✅ Onboarding Pop-up Styling */
 .popup-container {
@@ -296,7 +296,7 @@ input:checked + .slider:before {
 }
 
 .preview-words-container {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   background-color: #f2f2f2;
   padding: 0.5rem;
   border-radius: 10px;
