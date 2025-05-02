@@ -13,7 +13,7 @@
 }
 
 .padlock-image {
-    width: 50px; /* Adjust size as needed */
+    width: 70px; /* Adjust size as needed */
     height: auto;
 }
 
@@ -257,7 +257,7 @@ button:hover {
 
 /* ✅ Toggle switch active state */
 input:checked + .slider {
-    background-color: #28a745; /* Green when toggled on */
+    background-color: rgba(179, 253, 169, 0.6); /* Pale green like correct answer input space when toggled on */
 }
 
 input:checked + .slider:before {
@@ -297,7 +297,7 @@ input:checked + .slider:before {
 
 .preview-words-container {
   margin-top: 0.5rem;
-  background-color: #f2f2f2;
+  background-color: #f3f1ec;
   padding: 0.5rem;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
