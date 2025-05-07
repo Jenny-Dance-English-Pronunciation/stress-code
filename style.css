@@ -318,3 +318,11 @@ input:checked + .slider:before {
   text-align: center;
   line-height: 1.6;
 }
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
