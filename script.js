@@ -199,6 +199,7 @@ function checkAnswer() {
     document.getElementById("ipa-text").style.display = "none";
     document.getElementById("toggle-ipa").checked = false;
 }
+} // ✅ closes function checkAnswer
 
 // ✅ Share Functionality
 function shareGame() {
@@ -314,6 +315,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 console.log("✅ loadWordData() was called! Waiting for response...");
+
 
 
 
