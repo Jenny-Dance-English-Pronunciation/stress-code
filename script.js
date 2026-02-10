@@ -190,8 +190,7 @@ function checkAnswer() {
 
     document.getElementById("feedback-message").style.display = "none";
     celebrateWin();
-}
-   } else {
+} else {
     document.getElementById("feedback-message").textContent =
       "Try Again: Change answers in orange. You can reveal the IPA spelling if you need help!";
     document.getElementById("feedback-message").style.display = "block";
@@ -199,7 +198,6 @@ function checkAnswer() {
     // ❌ Do NOT auto-reveal IPA
     document.getElementById("ipa-text").style.display = "none";
     document.getElementById("toggle-ipa").checked = false;
-}
 }
 
 // ✅ Share Functionality
@@ -332,4 +330,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 console.log("✅ loadWordData() was called! Waiting for response...");
+
 
