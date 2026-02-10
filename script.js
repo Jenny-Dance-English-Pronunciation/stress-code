@@ -288,22 +288,6 @@ function closeOnboardingPopup() {
     localStorage.setItem("seenPopup", "true"); // ✅ Remember that the user has seen it
 }
 
-// ✅ Run onboarding pop-up on first visit
-    const shareBtn = document.getElementById("share-btn");
-    if (shareBtn) {
-        shareBtn.addEventListener("click", shareGame);
-        console.log("✅ Share button event listener added!");
-    } else {
-        console.warn("⚠️ Share button not found in the DOM!");
-    }
-
-    console.log("✅ Calling loadWordData() now...");
-    loadWordData();
-    updateScoreDisplay(); // ✅ Load the score when page loads
-
-    // ✅ Show onboarding pop-up only for first-time users
-    showOnboardingPopup();
-
 // ✅ Add event listeners properly
 document.addEventListener("DOMContentLoaded", () => {
     console.log("✅ Adding event listeners...");
@@ -330,5 +314,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 console.log("✅ loadWordData() was called! Waiting for response...");
+
 
 
