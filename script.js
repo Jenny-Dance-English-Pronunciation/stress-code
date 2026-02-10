@@ -182,16 +182,24 @@ function checkAnswer() {
     }
 
     if (allCorrect) {
-        updateScore(); // ✅ Update score if correct
-        celebrateWin();
-        feedbackMessage.style.display = "none"; // Hide message if correct
-    } else {
-            // ✅ Show a custom "Try Again" message
-        document.getElementById("feedback-message").textContent = "Try Again: Change answers in orange using the IPA spelling to help you solve the puzzle!";
-        document.getElementById("feedback-message").style.display = "block"; // Show feedback message if incorrect
-        document.getElementById("ipa-text").style.display = "inline"; // Reveal IPA
-        document.getElementById("toggle-ipa").checked = true; // ✅ Move toggle to ON position
-    }
+    updateScore();
+
+    // ✅ Auto-reveal IPA for confirmation
+    document.getElementById("ipa-text").style.display = "inline";
+    document.getElementById("toggle-ipa").checked = true;
+
+    document.getElementById("feedback-message").style.display = "none";
+    celebrateWin();
+}
+   } else {
+    document.getElementById("feedback-message").textContent =
+      "Try Again: Change answers in orange. You can reveal the IPA spelling if you need help!";
+    document.getElementById("feedback-message").style.display = "block";
+
+    // ❌ Do NOT auto-reveal IPA
+    document.getElementById("ipa-text").style.display = "none";
+    document.getElementById("toggle-ipa").checked = false;
+}
 }
 
 // ✅ Share Functionality
@@ -324,3 +332,4 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 console.log("✅ loadWordData() was called! Waiting for response...");
+
